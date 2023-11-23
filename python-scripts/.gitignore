@@ -1,0 +1,11 @@
+# mac os x stuff
+.DS_Store
+
+# tox
+.tox
+
+# pytest-cov
+.coverage
+
+# virtual environments
+venv
