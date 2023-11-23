@@ -10,7 +10,7 @@ def main():
         # A simple example starting with a BL tile
         scale = 100
 
-        ngen = 1
+        ngen = 3
 
         config = {'width': '100%', 'height': '100%',
                 'stroke-colour': '#000',
@@ -26,7 +26,7 @@ def main():
         #          'draw-arcs': False,
         #          'reflect-x': True,
         #          'draw-rhombuses': False,
-        #          'rotate': math.pi/2,
+                 'rotate': math.pi/2,
         #          'flip-y': False, 
         #          'flip-x': False,
         }        
