@@ -4,6 +4,7 @@ from penrose_p3 import PenroseP3
 from btiles import BtileL
 # from IPython.display import SVG
 import cairosvg
+from PIL import Image
 
 def main():
     try:
@@ -22,10 +23,10 @@ def main():
                 'Ltile-colour': '#fff',
         #          'Aarc-colour': '#f00',
         #          'Carc-colour': '#00f',
-                'draw-tiles': True,
+                # 'draw-tiles': True,
         #          'draw-arcs': False,
         #          'reflect-x': True,
-        #          'draw-rhombuses': False,
+                #  'draw-rhombuses': False,
                  'rotate': math.pi/2,
         #          'flip-y': False, 
         #          'flip-x': False,
@@ -41,12 +42,32 @@ def main():
 
         tiling.set_initial_tiles([BtileL(A, B, C)])
         tiling.make_tiling()
-        svg = tiling.make_svg()
-        # SVG(svg)
-        cairosvg.svg2png(bytestring=svg.encode('utf-8'), write_to='logo.png')
+        del tiling.elements[14:]
+        del tiling.elements[8:10]
+        del tiling.elements[0:2]
+        svg_text = tiling.make_svg()
+        with open('simula-logo.svg', 'w') as f:
+            f.write(svg_text)
+
+        cairosvg.svg2png(bytestring=svg_text.encode('utf-8'), write_to='simula-logo.png', output_height=540,output_width=1080)
+        autocrop_image_with_transparency('simula-logo.png', 'simula-logo.png')
+
     except Exception as e:
         logging.error(e)
         raise e    
+
+def autocrop_image_with_transparency(input_path, output_path):
+    with Image.open(input_path) as image:
+        # Convert the image to RGBA if it's not already in that mode
+        image = image.convert("RGBA")
+
+        # Get the bounding box of the non-transparent part of the image
+        bbox = image.getbbox()
+
+        # Crop the image to the bounding box
+        if bbox:
+            cropped_image = image.crop(bbox)
+            cropped_image.save(output_path)
 
 if __name__=="__main__":
     main()
