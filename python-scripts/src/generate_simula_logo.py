@@ -27,7 +27,7 @@ def main():
         #          'draw-arcs': False,
         #          'reflect-x': True,
                 #  'draw-rhombuses': False,
-                 'rotate': math.pi/2,
+                 'rotate': 3*math.pi/2,
         #          'flip-y': False, 
         #          'flip-x': False,
         }        
