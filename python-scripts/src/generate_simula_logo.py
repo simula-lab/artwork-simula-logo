@@ -1,11 +1,11 @@
 import logging
-import argparse
 import math
 from penrose_p3 import PenroseP3
 from btiles import BtileL
-# from IPython.display import SVG
-import cairosvg
 from PIL import Image
+import argparse
+import cairosvg
+
 
 def generate_simula_logo_svg(scale=100, base_stroke_width=0.02, stroke_colour='#000', tile_opacity=0, Stile_colour="#fff", Ltile_colour="#fff", random_tile_colours=False):
     try:
@@ -55,7 +55,6 @@ def autocrop_image_with_transparency(input_path, output_path):
             cropped_image = image.crop(bbox)
             cropped_image.save(output_path)
 
-
 def main():
     try:
         parser = argparse.ArgumentParser(description="Generate Simula logo in SVG and PNG formats.")
@@ -82,8 +81,6 @@ def main():
     except Exception as e:
         logging.error(e)
         raise e    
-
-
 
 if __name__=="__main__":
     main()

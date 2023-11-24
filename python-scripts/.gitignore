@@ -10,5 +10,8 @@
 # virtual environments
 venv
 
+# setuptoolt
+simila_logo_generator.egg-info*
+
 # Cache
 __pycache__
