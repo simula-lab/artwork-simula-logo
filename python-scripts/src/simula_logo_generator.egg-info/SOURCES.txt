@@ -1,0 +1,17 @@
+pyproject.toml
+setup.cfg
+src/penrose/__init__.py
+src/penrose/btiles.py
+src/penrose/penrose_p3.py
+src/penrose/polygon.py
+src/penrose/robinson_triangle.py
+src/penrose/triangle.py
+src/simula_logo_generator/__init__.py
+src/simula_logo_generator/generate_simula_logo.py
+src/simula_logo_generator.egg-info/PKG-INFO
+src/simula_logo_generator.egg-info/SOURCES.txt
+src/simula_logo_generator.egg-info/dependency_links.txt
+src/simula_logo_generator.egg-info/entry_points.txt
+src/simula_logo_generator.egg-info/not-zip-safe
+src/simula_logo_generator.egg-info/requires.txt
+src/simula_logo_generator.egg-info/top_level.txt

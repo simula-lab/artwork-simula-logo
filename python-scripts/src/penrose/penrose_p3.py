@@ -1,7 +1,7 @@
 import math
 import random
 
-from btiles import BtileL
+from penrose.btiles import BtileL
 
 # A small tolerance for comparing floats for equality
 TOL = 1.0e-5

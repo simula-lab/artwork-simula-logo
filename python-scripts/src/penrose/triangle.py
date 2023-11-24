@@ -1,4 +1,4 @@
-from polygon import Polygon
+from penrose.olygon import Polygon
 
 
 class Triangle(Polygon):

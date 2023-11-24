@@ -1,6 +1,6 @@
 import math
 
-from robinson_triangle import RobinsonTriangle
+from penrose.robinson_triangle import RobinsonTriangle
 
 # psi = 1/phi where phi is the Golden ratio, sqrt(5)+1)/2
 psi = (math.sqrt(5) - 1) / 2

@@ -1,7 +1,7 @@
 import logging
 import math
-from penrose_p3 import PenroseP3
-from btiles import BtileL
+from penrose.penrose_p3 import PenroseP3
+from penrose.btiles import BtileL
 from PIL import Image
 import argparse
 import cairosvg

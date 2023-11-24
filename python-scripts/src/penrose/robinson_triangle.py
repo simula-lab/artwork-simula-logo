@@ -1,4 +1,4 @@
-from triangle import Triangle
+from penrose.triangle import Triangle
 
 
 class RobinsonTriangle(Triangle):

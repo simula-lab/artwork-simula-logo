@@ -1,0 +1,2 @@
+[console_scripts]
+generate_simula_logo = simula_logo_generator.generate_simula_logo:main

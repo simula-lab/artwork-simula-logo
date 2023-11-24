@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: simula-logo-generator
+Version: 1.0.0
+Summary: Generates an SVG and a PNG of the Simula Logo
+Home-page: https://gitlab.com/simulalab/artwork/simula-logo
+Author: Oussama Jarrousse
+Author-email: jarrousse@simulalab.org
+Project-URL: Bug Tracker, https://gitlab.com/simulalab/artwork/simula-logo/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: wheel
+Requires-Dist: cairosvg
+Requires-Dist: Pillow
